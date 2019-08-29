@@ -12,7 +12,6 @@ dx12 = ["wgpu/dx12"]
 vulkan = ["wgpu/vulkan"]
 
 [dependencies]
-wgpu = { git = "https://github.com/gfx-rs/wgpu-rs.git" }
 cgmath = "0.17"
 env_logger = "0.5"
 glsl-to-spirv = "0.1"
@@ -21,5 +20,7 @@ num-traits = "0.2.6"
 imgui = "0.0.23"
 imgui-winit-support = "0.0.23"
 
-[dev-dependencies]
-# winit = "*"
+[dependencies.wgpu]
+version = "0.2"
+git = "https://github.com/gfx-rs/wgpu-rs"
+rev = "5522c912f7e2f4f33a1167fb0c8ee4549f066dcf"
